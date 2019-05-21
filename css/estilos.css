@@ -1,0 +1,26 @@
+div {
+	margin-top: 290px;
+	margin-left: 20px;
+    }
+body{
+	background-color: GoldenRod;
+  text-align: center;
+  font-family:tahoma;
+	font-size: 15px !important;
+  }
+h1
+{
+  color:blue;
+  }
+img {
+	border-radius: 15px;
+}
+p
+{
+  color:black;
+  font-size: 18px;
+}
+footer {
+	margin-top: 60px;
+
+}
