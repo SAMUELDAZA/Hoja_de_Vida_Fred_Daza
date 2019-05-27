@@ -6,14 +6,14 @@ body{
 	background-color: GoldenRod;
   text-align: center;
   font-family:tahoma;
-	font-size: 15px !important;
+	font-size: 16px !important;
   }
 h1
 {
   color:blue;
   }
 img {
-	border-radius: 15px;
+	border-radius: px;
 }
 p
 {
@@ -23,4 +23,50 @@ p
 footer {
 	margin-top: 60px;
 
+}
+
+{# con este antes se define el selector id el cual identifica a un único elemento /para este ej llame el id="contenedor"}
+#contenedor{
+	font-family: helvetica
+	font-size: 16px
+}
+
+{. con un punto se definen los selectores class el cual identificaa multiples elementos /para este eje llame el class="enlace"}
+.enlace{
+	color: blue;
+}
+{
+Estos son selectores un poco mas específicos se coloca el nombre de la etiqueta y entre []...
+.}
+img[src$=".svg"]{
+	border-radius: 300px;
+}
+img[src$=".png"]{
+	border-radius: 30px;
+}
+a[href]{
+	color: blue;
+}
+{Especificando algunas normas y o claves para entender mejor las etiquetas específicas
+	img[src$='iconos']  =Todas las imágenes cuyo atributo src termina con la palabra 'iconos'
+	a[href] = Todas las a con atributo href
+	img[src^='iconos']  =  Todas las imágenes cuyo atributo src comience con la palabra 'iconos'
+	img[src|='iconos']  =  Todas las imágenes cuyo atributo src contenga la palabra 'iconos'
+}
+{Selector universal asterisco *}
+*{
+	margin: 1vh 1vw;
+}
+{Otra forma de selectores es como una suma, esto quiere decir que se ejecutar cuando se cumpla uno seguido del otro (la verdad
+	no le vi mucha funcionaliad) por ejemplo:  h1+h2{lo k se quiera}
+ como si fuera un hijo por ejemplo =  h2 ~ p {text-align: justify;}
+}
+
+h3 ~ p {text-align: justify;}
+
+{otros:  los cuales son hijos, como por ejemplo
+article> h2{lo que se desea}   ;;; ó directamento como :  ul li {lo que se desea como por ej:  list-style-type: circle;}
+}
+a[href^='http://']:visited{
+	color:red
 }
